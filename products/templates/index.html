@@ -21,7 +21,14 @@
 
 {% block product %}
 
-    <h1>New Products</h1>
+    <div class="container d-flex justify-content-between">
+      <div class="col-10">
+        <h1>New Products</h1>
+      </div>
+      <div class="col p-4">
+        <a href="new/">newpage</a>
+      </div>
+    </div>
     <div class="row">
       {% for product in new|slice:":5" %}
       <div class="col">

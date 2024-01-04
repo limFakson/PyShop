@@ -10,4 +10,5 @@ def index(request):
 
 
 def new(request):
-    return HttpResponse('New Products')
+    new = NewProduct.objects.all()
+    return render(request, 'newproducts.html', {'new': new})
